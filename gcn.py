@@ -296,13 +296,6 @@ model.compile(optimizer = adam, loss = mae, metrics = ['mse'])
 # result = model.fit(train.batch(1), validation_data = val.batch(1), epochs = 15)
 result = model.fit(train.batch(1), epochs = 10)
 
-'''
-    adam
-    0.003 - 10, 10
-    0.001 - 10, 10, 10, 10, 10
-    0.0005 - 100, 40
-    0.0001 - 130, 70
-'''
 
 #%%
 plt.plot(result.history['loss'], label='training')
